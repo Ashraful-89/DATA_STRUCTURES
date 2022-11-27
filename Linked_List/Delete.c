@@ -11,13 +11,13 @@ typedef struct Node node;
 
 void print()
 {
-    node * temp = head;
+    node *temp = head;
     if(head == NULL){
         printf("Nothing to print.\n");
         return;
     }
     while(temp != NULL){
-        printf("%d ", temp -> data);
+        printf("%d ", temp-> data);
         temp = temp ->next;
     }
     printf("\n");

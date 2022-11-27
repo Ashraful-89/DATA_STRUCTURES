@@ -17,6 +17,10 @@ node *createNode(int data) {
 }
 
 node *insert(node *root , int data) {
+    if(data == - 1) {
+        cout << "Bye" << endl;
+        return 0;
+    }
     node *currentNode = root;
     node *newNode = createNode(data);
 
@@ -33,6 +37,7 @@ node *insert(node *root , int data) {
                 }
                 else {
                     currentNode->left = newNode;
+                    cout << loc << endl;
                     break;
                 }
             }
@@ -43,6 +48,7 @@ node *insert(node *root , int data) {
                 }
                 else {
                     currentNode->right = newNode;
+                    cout << loc << endl;
                     break;
                 }
             }

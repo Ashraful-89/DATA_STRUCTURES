@@ -12,7 +12,7 @@ Node *head ,  *temp , *newNode;
     int choice ;
     printf(" Do u want to Continue?"); 
     scanf("%d",&choice);
-   while(choice){
+    while(choice){
     newNode = (Node*) malloc(sizeof(Node));
     printf("Enter the data :");
     scanf("%d ", &newNode -> data);

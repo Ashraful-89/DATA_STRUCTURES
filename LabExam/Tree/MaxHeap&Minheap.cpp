@@ -83,6 +83,28 @@ void insertMinHeap(int data ) {
     }
 }
 
+void deleted_root() {
+    heap[1] = heap[size];
+    size = size - 1;
+    int i = 1;
+
+    while(i < size) {
+        int leftIndex = 2 * i;
+        int rightIndex = 2 * i + 1;
+        if(i < size && heap[leftIndex] > heap[i]) {
+            swap(heap[leftIndex] , heap[i]);
+            i = leftIndex;
+        }
+        else if(i < size && heap[rightIndex] > heap[i]) {
+            swap(heap[rightIndex] , heap[i]);
+            i = rightIndex;
+        }
+        else {
+            return;
+        }
+    }
+}
+
 void Print_as_tree(int i , int space) {
     if(heap[i] == 0) return;
 
@@ -112,8 +134,10 @@ int main() {
     for(int i = 1 ; i < size + 1; i++) {
         cout << heap[i] << " ";
     }
+    deleted_root();
+    cout << "\n\nAfter the deletion of the root value : \n";
+        Print_as_tree(1,0);
 
-    cout << "\nThe Heap as the tree : \n";
     
     return 0;
 

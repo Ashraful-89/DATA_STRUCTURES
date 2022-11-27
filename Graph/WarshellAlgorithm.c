@@ -20,7 +20,7 @@ int main() {
         for( j = 0 ; j < n ; j++){
             if(matrix[i][j]){
                 path_matrix[i][j] = 1;
-                 shortest_martix[i][j] = path_matrix[i][j];
+                shortest_martix[i][j] = path_matrix[i][j];
             }
 
             else{
