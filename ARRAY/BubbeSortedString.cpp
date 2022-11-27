@@ -7,13 +7,10 @@ int main (void) {
     cout << "Enter String : " ;
     for(int i = 0 ; i < n ; i++) cin >> names[i];
     string temp;
-    for(int i = 0 ; i < n ; i++) {
-        for(int j= 0 ; j < n ; j++) {
+    for(int i = 0 ; i < n - 1 ; i++) {
+        for(int j = 0 ; j < n - i - 1 ; j++) {
             if(names[j].compare(names[j+1]) > 0 ){
-                temp = names[j+ 1];
-                names[j+1] = names[j];
-                names[j] = temp;
-
+                swap(names[j],names[j+1]);
             }
         }
     }

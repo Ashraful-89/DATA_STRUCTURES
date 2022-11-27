@@ -7,9 +7,9 @@ int isEmpty();
 int isFull();
 void display();
 
-int max = 10;
-int stack[10];
-int top = -1;
+int MAX = 10;
+int STK[11];
+int top = - 1;
 
 int main(void)
 {
@@ -40,7 +40,7 @@ int isEmpty()
 
 int isFull()
 {
-    if(top == (max - 1))
+    if(top == (MAX - 1))
     {
         return 1;
     }
@@ -55,7 +55,7 @@ void push(int item)
     if(!isFull())
     {
         top++;
-        stack[top] = item;
+        STK[top] = item;
     }
     else
     {

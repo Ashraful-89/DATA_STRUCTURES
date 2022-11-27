@@ -69,7 +69,7 @@ int main() {
              {0, 3, 0, 0},
              {4, 0, 1, 0}};
 
-    printf("The Simple MAtrix is :\n");
+    printf("The Simple Matrix is :\n");
     for(int i = 0 ; i < nV ; i++){
         for(int j = 0 ; j < nV ;j++){
             printf("%4d",graph[i][j]);
