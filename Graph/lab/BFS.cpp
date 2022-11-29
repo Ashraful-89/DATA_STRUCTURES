@@ -59,8 +59,7 @@ int main() {
     addEdge(adj,2,0);
     addEdge(adj,2,3);
     addEdge(adj,2,4);
-
-
+    
     cout << "BFS traversel : ";
     BFS(0,adj,visited);
     cout << endl;

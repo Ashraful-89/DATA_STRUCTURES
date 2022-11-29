@@ -11,7 +11,7 @@ int Br[10][10];
 int main() {
 
 //     // Problem 1 , 2 , 3, 4 respectivly done:
-//     // Problem : 1 Find the Path matrix of length 1 , 2, 3, 4
+//     // Problem : 1 Find the Path matrix of length 1, 2, 3, 4;
 
 //     int node,edge;
 //     cout << "Enter the number of  Node and Edge : "; cin >> node >> edge;
@@ -154,7 +154,7 @@ int main() {
     int shortest_pathMatrix[node][node];
     int matrix[node][node];
 
-    cout << "Enter the adjacency Matrix for Wieghted graph : \n";
+    cout << "Enter the adjacency Matrix for Weighted graph : \n";
     for(int i = 0; i < node ; i++) {
         for(int j = 0; j < node ; j++) {
             cin >> matrix[i][j];

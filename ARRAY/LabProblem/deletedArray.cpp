@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
-    // deleted any string iun the sorted string 
+    // deleted any string in the sorted string 
     int n = 7; 
     string names[100] = {"ashraful","akash","manobi","naim","risha","rubel","sakil"};
 
@@ -12,6 +12,7 @@ int main() {
         if(name.compare(names[i]) == 0) 
         {
              index = i;
+             break;
         }
     }
     n = n - 1;
