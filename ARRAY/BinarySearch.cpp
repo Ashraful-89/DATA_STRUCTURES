@@ -7,7 +7,7 @@
 // //     cout << "Enter the Value of Array Size : " ; cin >> n;
 
 // //     int array[n];
-// //     //Take the value of arrray 
+// //     //Take the value of array 
 // //     cout << "Enter the value of array element : ";
 // //     for(int i = 0 ; i < n ; i++)  cin >> array[i];
 

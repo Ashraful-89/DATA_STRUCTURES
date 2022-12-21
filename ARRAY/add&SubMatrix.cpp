@@ -2,7 +2,7 @@
 int mat1[3][3] , mat2[3][3] ,mat3[3][3], mat4[3][3],i,j,row,col;
 using namespace std ;
 int main() {
-    cout << "Hi , Ami Ashraful :\n";
+    cout << "Hi , I am Ashraful :\n";
     cout << "Enter Row : "; cin >> row;
     cout << "Enter Column : " ; cin >> col;
 

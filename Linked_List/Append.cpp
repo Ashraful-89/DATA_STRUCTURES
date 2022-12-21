@@ -50,5 +50,6 @@ int main()
         inserted(x);
         }
     cout <<"Print tha list" <<endl;
+    
     print();
 } 

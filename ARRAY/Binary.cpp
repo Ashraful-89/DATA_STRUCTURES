@@ -18,7 +18,7 @@ int binarySearchString(string arr[], string x, int n) {
    return -1;
 }
 int main () {
-    int n = 4;
+   int n = 4;
    string arr[n];
    cout << "enter the names : ";
    for(int i = 0; i < 4 ; i++) cin >> arr[i];
@@ -29,5 +29,5 @@ int main () {
    if(result == -1)
       cout<<("Element not present");
    else
-      cout<<("Element found at index ")<<result;
+      cout<<("Element found at index ") << result;
 }
